@@ -40,6 +40,7 @@ public class User {
         return scanner.next();
     }
 
+    // ANDY: Nice example of overloading (but you should remove some of the duplication between the two getInt() methods).
     public static int getInt(String message, int min, int max) {
         do {
             System.out.print(message);
