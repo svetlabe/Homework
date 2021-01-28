@@ -4,6 +4,9 @@ import java.util.ArrayList;
 
 public class Menu {
 
+    // ANDY: Yes, I think you could benefit from a class such as Inventory, which holds the list of Products and does all the list management.
+    // ANDY: The Menu class can then just focus on displaying options and triggering actions on Inventory.
+    
     // It is better to make a separate class for collection of products. Made a temporary collection here.
     public static ArrayList<Product> products = new ArrayList<Product>();
 
@@ -17,6 +20,7 @@ public class Menu {
             userChoice = User.getInt("\n What do you want to do? \n 1: Add product\n 2: Show product\n 3: Check stock \n 4: See the tax\n 5: Exit \n");
             switch (userChoice) {
                 case 1:
+                    // ANDY: Each of these branches should probably be a separate function.
                     Product product = createProduct();
                     addProduct(product);
                     System.out.println("This product has been added: " + product);
@@ -68,6 +72,7 @@ public class Menu {
         while (userChoice != 5);
     }
 
+    // ANDY: Nice.
     private Product createProduct(){
         Product newProduct = new Product(User.getString("Name of the product: \n"), User.getString("Category: \n"), User.getDouble("Price: \n"), User.getInt("Stock Reorder Theshhold: \n"));
         return newProduct;
