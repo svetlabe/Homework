@@ -24,7 +24,8 @@ public class Inventory {
     }
 
     public void addProduct(){
-        Product newProduct = new Product(User.getString("Name of the product: \n"), User.getString("Category: \n"), User.getDouble("Price: \n"), User.getInt("Stock Reorder Theshhold: \n"));
+        String name = User.getString("Name of the product: \n");
+        Product newProduct = new Product(name, User.getString("Category: \n"), User.getDouble("Price: \n"), User.getInt("Stock Reorder Theshhold: \n"));
         products.add(newProduct);
         System.out.println("This product has been added: " + newProduct);
         System.out.println("------------------------------------------");
@@ -33,11 +34,7 @@ public class Inventory {
 // other methods needed in the menu
 
     private boolean checkCollection(){  // use in other methods to check if the ArrayList not empty
-        if (products.size()> 0){
-            return true;
-        } else {
-            return false;
-        }
+        return products.size() > 0;
     }
 
     // use in menu 2
