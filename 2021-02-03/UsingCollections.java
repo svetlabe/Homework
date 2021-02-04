@@ -91,7 +91,7 @@ public class UsingCollections {
 							footballTeams.set(index, team);
 							System.out.printf("%s was changed to %s \n",t,team);
 						} else{
-							System.out.println("Opertaion failed");
+							System.out.println("Operation failed");
 						}
 						break;
 					
@@ -316,12 +316,10 @@ public class UsingCollections {
 						// TODO: Put employee into map.
 						//       Display a success/failure message.
 
-						if(emp == null){
-							System.out.println("No employee to add");
-						} else {
+
 							employees.put(emp.getId(), emp);
 							System.out.printf("%s was added \n", emp);
-						}
+
 						break;
 						
 					case 2:
@@ -403,9 +401,9 @@ public class UsingCollections {
 	}
 
 	public static boolean validTeam(String team){
-		return !team.isEmpty() && !team.isEmpty();
+		return !team.isEmpty() ;
 	}
-	public static boolean isValidIndex(int index, ArrayList list){
+	public static boolean isValidIndex(int index, ArrayList<String> list){
 		return index >= 0 && index < list.size();
 
 	}
