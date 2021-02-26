@@ -6,7 +6,7 @@ Kan flyttes til Order som parameter
 
 public class Channel {
     private String channelType;
-    private Order order;
+    private ArrayList<Order> orders;
 
     public Channel(String channelType, Order order) {
         this.channelType = channelType;
