@@ -1,4 +1,4 @@
-package reskillAssignmentOne;
+
 
 /*
 Vi kan slette de som vi ikke trenger etterpå,
