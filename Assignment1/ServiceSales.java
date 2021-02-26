@@ -1,4 +1,6 @@
-package reskillAssignmentOne;
+/*
+Stores data stucture and statistical functions
+*/
 
 import java.util.*;
 
