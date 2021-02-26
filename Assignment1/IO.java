@@ -1,10 +1,4 @@
-package reskillAssignmentOne;
-/*
-Vi skal vurdere om vi trenger interface for input.
-beholder alle opprinnelige metodene foreløpig
- */
 
-//import java.time.LocalTime;
 
 public interface IO {
     void logMessage(String message);
