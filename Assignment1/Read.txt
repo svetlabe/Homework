@@ -1,0 +1,19 @@
+Statistical functions 1 and 2 in the Menu are not implemented yet.
+Created in cooperation with Tom Forsell
+
+
+Assignment task
+In this assignment you will implement a Java or C# application to analyse sales data from a file, and get various statistics from it.
+
+Familiarization
+Take a look at SalesRecords.csv. This is a comma-separated-value (CSV) file that contains random sales data for a hypothetical company. Open this file in a text editor to familiarize yourself with its structure. Note the following points:
+•	The first line contains "column headings", which explain the meaning of each field
+•	Each of the remaining lines represents a separate sale
+Requirements:
+Your task is to implement a C# or Java application to load this file into memory and calculate various statistical information. There are some important points you should bear in mind:
+•	Your application should receive the name of the data file as a command-line argument. If the command line doesn't specify a file name, or if the data file cannot be opened for whatever reason, terminate the program immediately with a suitable error message.
+•	You must implement CSV-file-parsing logic to read all the records from the data file into memory.
+•	The current data file is CSV, but in future your application might need to support other data file formats (e.g. JSON, XML, fixed-record format, etc.). Therefore, your application must be written in a "pluggable" fashion so that other types of file-parser logic might be implemented in the application in future. Hint: think "interfaces"…
+•	The application must offer various statistical calculations. It's up to you to decide what kinds of statistical analyses are appropriate. Your application should be flexible enough such that other kinds of analyses could be implemented and plugged into the application in future. 
+•	Implement some kind of simple menu-driven approach to enable the user to decide what statistical information to display on the screen.
+•	Also implement a mechanism that allows the user to export summary information to a report document. The summary information might contain max/min costs, total revenue, average units sold, etc. It's up to you (or even maybe the user?) to decide what summary information to generate in the output file. For added credit, you might also allow the user to choose the output file format (e.g. CSV, JSON, etc.) 
