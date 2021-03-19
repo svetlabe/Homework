@@ -1,0 +1,3 @@
+Practicing Spring Boot.
+Datasourse: H2 db
+Testing different models: CrudRepository and jpa.
