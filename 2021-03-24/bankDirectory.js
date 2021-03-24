@@ -64,6 +64,6 @@ const BankDirectory = ({title, accounts}) =>
     </div>
 
 ReactDOM.render(
-    <BankDirectory accounts={bankAccountData} title="Super Dupper Bank" />,
+    <BankDirectory accounts={bankAccountData} title="Super Duper Bank" />,
     document.getElementById("app-root")
 )
