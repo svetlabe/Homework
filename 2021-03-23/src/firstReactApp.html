@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Creating Page with fancy cars</title>
+</head>
+<body>
+
+<div id='app-root'></div>
+
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+<script>
+
+    const products = [
+        {desc: 'Bugatti Divo', price: 4000000, inStock: 1},
+        {desc: 'Lamborghini Sian', price: 2200000, inStock: 2},
+        {desc: 'Jaguar I-Pace', price: 80000, inStock: 5},
+        {desc: 'BMW 3', price: 50000, inStock: 10},
+        {desc: 'BMW 5', price: 150000, inStock: 10},
+        {desc: 'Volvo S90', price: 85000, inStock: 15},
+        {desc: 'Nissan Leaf', price: 35000, inStock: 15}
+    ]
+
+    const prodList = React.createElement(
+        'ol',
+        null,
+        products.map((p, i) => React.createElement("li", {key: i}, p))
+    )
+
+
+    const retailer = React.createElement('div', null,
+        React.createElement('h1', null, 'Our fancy cars'),
+        prodList
+
+    )
+
+    ReactDOM.render(retailer, document.getElementById('app-root'))
+
+</script>
+
+</body>
+</html>
