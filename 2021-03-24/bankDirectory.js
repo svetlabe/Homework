@@ -13,12 +13,12 @@ const bankAccountData = [
     {
         "bankAccountName": "Tom's Bank Account",
         "currentBalance": [
-            { "currentbalance": 10000000 },
+            { "currentbalance": 20000000 },
 
         ],
         "transactions": [
             { "name": "Tax returned", "amount": 200000},
-            { "name": "Salary", "amount": 2000000},
+            { "name": "Salary", "amount": 4000000},
         ]
     },
     {
