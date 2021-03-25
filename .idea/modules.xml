@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/2021-03-23/2021-03-23.iml" filepath="$PROJECT_DIR$/2021-03-23/2021-03-23.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Reskill.iml" filepath="$PROJECT_DIR$/Reskill.iml" />
+      <module fileurl="file://$PROJECT_DIR$/online-retailer-1803/online-retailer-1803.iml" filepath="$PROJECT_DIR$/online-retailer-1803/online-retailer-1803.iml" />
+    </modules>
+  </component>
+</project>
